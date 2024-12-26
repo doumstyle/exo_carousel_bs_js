@@ -54,8 +54,12 @@ darkModeBtn.addEventListener("click", () => {
 
   if (document.body.classList.contains("text-light")) {
     document.querySelector("#progress-bar").style.background = "#fff";
+    document.querySelector("#carousel-container").style.background =
+      "url(./images/Background_dark.jpg)";
   } else {
     document.querySelector("#progress-bar").style.background = "#000";
+    document.querySelector("#carousel-container").style.background =
+      "url(./images/concrete_seamless.png)";
   }
 
   navItems.forEach((item) => {
